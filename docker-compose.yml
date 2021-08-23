@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql
+    container_name: db_macapa
+    environment:
+    - MYSQL_ROOT_PASSWORD=admin
+    - MYSQL_DATABASE=admin
+    - MYSQL_USER=admin
+    - MYSQL_PASSWORD=admin
+    - MYSQL_ROOT_HOST=%
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+    - ./db/db_macapa:/docker-entrypoint-initdb.d
+
+  postgresql:
+    image: postgres
+    container_name: db_varejao
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: "admin"
+      POSTGRES_USER: "admin"
+      POSTGRES_DATABASE: "admin"
+    volumes:
+    - ./db/db_varejao:/docker-entrypoint-initdb.d
