@@ -19,11 +19,11 @@ psql -h localhost -p 5432 -U admin -d admin
 select * from contacts;
 
 # Running Flask API
-cd app/              # if you're on "docker" directory
+cd app/              # if you're on main directory
 python3 api.py
 
 # Inserting data on databases
-python3 test_api.py  # if you're on "docker" directory
+python3 test_api.py  # if you're on main directory
 
 
 
@@ -48,8 +48,8 @@ psql -h localhost -p 5432 -U admin -d admin
 select * from contacts;
 
 # Rodando a API
-cd app/              # Se estiver no diretório "docker"
+cd app/              # Se estiver no diretório principal
 python3 api.py
 
 # Inserindo dados nas duas databases
-python3 test_api.py  # Se estiver no diretório "docker"
+python3 test_api.py  # Se estiver no diretório principal
