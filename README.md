@@ -1,7 +1,4 @@
-This was a test proposed. I couldn't finish on time, but was a good experience. 
-I used Flask to develop a API that receive data (contacts) from Json format and store on databases (two docker containers, MySQL and PostgreSQL) on specific formats.
-
-Instructions:
+# This was a test proposed. I couldn't finish on time, but was a good experience. I used Flask to develop a API that receive data (contacts) from Json format and store on databases (two docker containers, MySQL and PostgreSQL) on specific formats.
 
 # Creating docker containers
 docker-compose up
@@ -30,12 +27,7 @@ python3 test_api.py  # if you're on "docker" directory
 
 
 
-Portuguese:
-
-Este foi um teste proposto. Não consegui terminar todas as etapas, mas foi uma boa experiência. 
-Usei Flask para desenvolver uma API que recebe dados de contatos em Json e armazena os mesmos em databases (containers do docker, MySQL e PostgreSQL) em formatos específicos.
-
-Instruções de uso:
+# Este foi um teste proposto. Não consegui terminar todas as etapas, mas foi uma boa experiência. Usei Flask para desenvolver uma API que recebe dados de contatos em Json e armazena os mesmos em databases (containers do docker, MySQL e PostgreSQL) em formatos específicos.
 
 # Criando container no docker
 docker-compose up
