@@ -47,25 +47,37 @@ docker-compose up
 
 Verificando containers criados
 
-```docker ps -a```
+```
+docker ps -a
+```
 
 Verificando se a tabela foi criada na database MySQL
 
-```docker exec -it db_macapa bash
+```
+docker exec -it db_macapa bash
 mysql -u admin -p
 use admin; 
 select * from contacts; 
 ```
 
 Verificando se a tabela foi criada na database PostgreSQL
+
+```
 docker exec -it db_varejao bash
 psql -h localhost -p 5432 -U admin -d admin
 \c
 select * from contacts;
+```
 
-# Rodando a API
+Rodando a API
+
+```
 cd app/              # Se estiver no diretório principal
 python3 api.py
+```
 
-# Inserindo dados nas duas databases
+Inserindo dados nas duas databases
+
+```
 python3 test_api.py  # Se estiver no diretório principal
+```
