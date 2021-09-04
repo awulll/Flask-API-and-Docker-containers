@@ -1,7 +1,9 @@
 This was a test proposed. I couldn't finish on time, but was a good experience. I used Flask to develop a API that receive data (contacts) from Json format and store on databases (two docker containers, MySQL and PostgreSQL) on specific formats.
 
 Creating docker containers
-'''docker-compose up'''
+'''
+docker-compose up
+'''
 
 Verifying containers
 '''docker ps -a'''
